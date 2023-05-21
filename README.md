@@ -1,6 +1,10 @@
 # AppReviewAnalysis
 **Analyze App Reviews**
 
+## Interactive Topic Inference
+
+This Python scripts are designed to perform topic inference on a given network setup interactively. The script allows users to input a network setup and receive inferred topics based on the input data. This can be useful for analyzing and understanding the underlying themes and topics present in a network of documents, articles, or any other form of textual data.
+
 ## Topic Clustering Parameter Search
 This project is designed to perform a parameter search for topic clustering algorithms. The main function takes a list of documents and returns the optimal parameters for clustering the documents based on their topics.
 ### Features
@@ -9,6 +13,9 @@ This project is designed to perform a parameter search for topic clustering algo
 - Performs a grid search to find the optimal parameters for the chosen topic modeling algorithm.
 - Evaluates the performance of the algorithm using coherence scores.
 - Returns the optimal parameters for the given dataset.
+- Interactive input: The script prompts the user to input the network setup, making it easy to use and customize for different datasets.
+- Topic inference: The script uses advanced algorithms to infer topics from the given network setup, providing valuable insights into the underlying themes and topics.
+- User-friendly output: The inferred topics are displayed in a clear and concise manner, making it easy for users to interpret the results.
 
 ### Dependencies
 
@@ -19,6 +26,7 @@ To run this script, you will need the following Python libraries:
 - `gensim`
 - `sklearn`
 
+Please ensure at least you have these libraries installed before running the script.
 
 ### Output
 
@@ -29,7 +37,10 @@ The function returns a dictionary containing the optimal parameters for the topi
 - `alpha`: The optimal alpha value for the chosen algorithm (only applicable for LDA).
 - `beta`: The optimal beta value for the chosen algorithm (only applicable for LDA).
 
+The script will prompt you to input the network setup, and it will then perform topic inference based on the input data. The inferred topics will be displayed in a user-friendly format.
+
 ### Example
+Suppose you have a network setup consisting of several documents, and you want to infer the topics present in these documents. You can input the network setup when prompted by the script, and the script will then analyze the data and display the inferred topics.
 
 ```python
 documents = [
